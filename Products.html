@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Products | NareShoes</title>
+  <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+    <h1><span class="highlight">Nare</span>Shoes</h1>
+  </div>
+  <nav class="navbar">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="Homepage.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+	  <li><a href="Checkout.html">Checkout</a></li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+  </header>
+
+  <main>
+    <h2>Our Shoe Collection</h2>
+	<div class="products-container">
+    <section class="product-grid">
+      <div class="product">
+        <img src="images/nikesrunners.jpg" alt="Running Shoe">
+        <h3>AirSpeed Runners</h3>
+        <p>P1,250 – Lightweight performance shoes</p>
+      </div>
+      <div class="product">
+        <img src="images/ClassicShoes.jpg" alt="Formal Shoe">
+        <h3>Classic Leather</h3>
+        <p>P950 – Elegant and durable</p>
+      </div>
+      <div class="product">
+        <img src="images/airjordans.jpg" alt="Fashion Shoe">
+        <h3>Streetwear sneakers</h3>
+        <p>P1,650 – Fine material comfort sneakers</p>
+      </div>
+	  <div class="product">
+        <img src="images/loafers.jpg" alt="Casual shoes">
+        <h3>Loafers </h3>
+        <p>P1,050 – Smart casual shoes</p>
+      </div>
+	  <div class="product">
+        <img src="images/mountaineers.jpg" alt="Hiking Shoes">
+        <h3>Merrill Hiking Shoes</h3>
+        <p>P2,250 – Lightweight hiking shoes</p>
+      </div>
+	  <div class="product">
+        <img src="images/MansSneakers1.jpg" alt="Fashion Shoe">
+        <h3>MansSneakers</h3>
+        <p>P1,350 – MansSneakers</p>
+      </div>
+	  <div class="product">
+        <img src="images/MansSneakers2.jpg" alt="Fashion Shoe">
+        <h3>MansSneakers</h3>
+        <p>P800 – MansSneakers</p>
+      </div>
+	  <div class="product">
+        <img src="images/MansSneakers3.jpg" alt="Fashion Shoe">
+        <h3>MansSneakers</h3>
+        <p>P1,200 – MansSneakers</p>
+		<div class="product">
+        <img src="images/FemaleShoes1.jpg" alt="Fashion Shoe">
+        <h3>FemaleShoes1</h3>
+        <p>P1,600 – FemaleShoes1</p>
+      </div>
+	  <div class="product">
+        <img src="images/FemaleShoes2.jpg" alt="Fashion Shoe">
+        <h3>FemaleShoes2</h3>
+        <p>P1,200 – FemaleShoes2</p>
+      </div>
+	  <div class="product">
+        <img src="images/FemaleShoes3.jpg" alt="Fashion Shoe">
+        <h3>Femalehoes3</h3>
+        <p>P1,500 –FemaleShoes3</p>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NareShoes. All rights reserved.</p>
+  </footer>
+  <div class="slideshow-bg">
+  <img src="images/background1.png" class="slide active">
+  <img src="images/background2.png" class="slide">
+</div>
+<script>
+  let current = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }, 5000);
+</script>
+</body>
+</html>
